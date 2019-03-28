@@ -77,7 +77,7 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
   document.getElementById('response').innerHTML = ' ';
   (function() {
-      const idleDurationSecs = 5;    // X number of seconds
+      const idleDurationSecs = 120;    // X number of seconds
       const redirectUrl = 'index.html';  // Redirect idle users to this URL
       let idleTimeout; // variable to hold the timeout, do not modify
       const resetIdleTimeout = function() {
