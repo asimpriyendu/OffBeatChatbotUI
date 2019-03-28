@@ -41,11 +41,11 @@
     </div>
     <div style="overflow: auto;">
       <div class="left-menu">
-        <button id="btn01" class="open-button" onclick="openForm()">ABOUT SNU <b>BOT</b></button>
-        <button id="btn02" class="open-button" onclick="openForm()">ADMISSION <b>BOT</b></button>  
-        <button id="btn03" class="open-button" onclick="openForm()">AFFILIATIONS <b>BOT</b></button>
-        <button id="btn04" class="open-button" onclick="openForm()">COURSES <b>BOT</b></button>
-        <button id="btn05" class="open-button" onclick="openForm()">FEES <b>BOT</b></button>
+        <button id="btn01" class="open-button" onclick="openForm()">ABOUT OFFBEAT <b>BOT</b></button>
+        <button id="btn02" class="open-button" onclick="openForm()">HOTEL BOOKING <b>BOT</b></button>  
+        <button id="btn03" class="open-button" onclick="openForm()">RESERVATION <b>BOT</b></button>
+        <button id="btn04" class="open-button" onclick="openForm()">INFRASTRUCTURE <b>BOT</b></button>
+        <button id="btn05" class="open-button" onclick="openForm()">CONTACT <b>BOT</b></button>
       </div>
       <div class="right-menu">
         <button id="btn06" class="open-button fl-rt" onclick="openForm()">INDUSTRY COLLABORATION <b>BOT</b></button>
@@ -72,14 +72,11 @@
 <script>
 function openForm() {
   document.getElementById("myForm").style.display = "block";
-    redirectUrl(false);
 }
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
   document.getElementById('response').innerHTML = ' ';
-}
-     //THIS FUNCTION REDIRECTS USER UPON INACTIVITY
-      (function() {
+  (function() {
       const idleDurationSecs = 5;    // X number of seconds
       const redirectUrl = 'index.html';  // Redirect idle users to this URL
       let idleTimeout; // variable to hold the timeout, do not modify
@@ -92,10 +89,12 @@ function closeForm() {
       // Init on page load
       resetIdleTimeout();
       // Reset the idle timeout on any of the events listed below
-      ['click', 'touchstart', 'mousemove','keypress'].forEach(evt => 
+      ['click', 'touchstart', 'mousemove','keypress','openForm','response'].forEach(evt => 
           document.addEventListener(evt, resetIdleTimeout, false)
       );
   })();
+}
+
 </script>
 </body>
 </html>
