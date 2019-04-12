@@ -294,7 +294,7 @@
     //THIS FUNCTION REDIRECTS USER UPON INACTIVITY
         (function() {
         const idleDurationSecs = 120;    // X number of seconds
-        const redirectUrl = 'slideShow.html';  // Redirect idle users to this URL
+        const redirectUrl = 'slideShow.php';  // Redirect idle users to this URL
         let idleTimeout; // variable to hold the timeout, do not modify
         const resetIdleTimeout = function() {
             // Clears the existing timeout
