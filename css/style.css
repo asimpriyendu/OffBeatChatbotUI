@@ -405,6 +405,7 @@ button:hover {
   border-radius: 20px;
   font-size: 12px;
   border: 1px solid blue;
+  margin-left: 50px;
 }
 
 .quickButton:hover {
