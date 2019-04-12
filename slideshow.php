@@ -42,7 +42,7 @@
 
   </style>
 </head>
-<body onclick='window.location.href="index.php"'>
+<body onclick='window.location.href="https://offbeatccu.herokuapp.com/"'>
   <div class="moving-letters">
     <h1 class="ml4">
       <span class="letters letters-1">Welcome</span>
