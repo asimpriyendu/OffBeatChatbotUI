@@ -22,7 +22,6 @@ var accessToken = "f190710cc93c4d3f820e6ca486e2c1f4";
       {
         setResponse("Have any query about bunkers? Go ahead, type in your question!"); 
         setButton("Details");
-        setButton("");
       });
       $("#btn03").click(function(event) 
       {
