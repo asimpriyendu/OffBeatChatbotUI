@@ -1,190 +1,360 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: tahoma, sans-serif;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-
-
-html {
-  height: 100%;
-  width: 100%;
-}
 body {
-  position: relative;
-  font-family: Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  background-size: 100%;
- /* background-image: url('images/AIWallpaper.png');  */
-  background-repeat: no-repeat;
+  width:100%;
+  height:100%;
+  background: black;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
+html{
+  width:100%;
+  height:100%;
+  margin:0;
 
-header {
-  margin: 2em 0;
-  text-align: center;
-}
-h1, h2, h3 {
-  margin: 0;
-  font-family: bookman;
-  text-rendering: optimizeLegibility;
-  text-align: center;
-}
-section {
-  margin: 1.5em auto;
 }
 
 .container {
+  padding: 0;
   width: 100%;
   height: 100%;
-  padding: 5px;
 }
 
-.container .top {
-  width: 100%;
-  height: 400px;
-}
 
-.container .top .logo {
-  width: 40%;
+
+.logo {
+  width: 20%;
   display: block;
-  position: fixed;    
+  position: fixed;
 }
-  /*For top left icon*/
 
-.container .top .logo .topleft {
-    top: 8px;
-    left: 16px;
-    width: 180px;
-    height: 80px;
-    border: 3px;
+.topleft {
+    top: 12px;
+    left: 3px;
+    width: 150px;
+    height: 40px;
+    border: 1px;
   }
-/* For top right icon*/
-.container .top .logo .topright {
-    top: 8px;
-    right: 16px;
-    width: 180px;
-    height: 80px;
-    border: 3px;
-}
-.container .top .quote {
-  float: right;
-  margin: 20px;
-  width: 60%;
-  padding: 30px;
-}
-
-.container .top .quote h1 {
-  float: left;
+/*
+ .quote {
+  width: 50%;
+  height: 100px;
+  margin-top: 5px;
   text-align: center;
-}
-
-.fa-github::before {
-    content: "\f09b";
-}
-
-.container .left-menu {
-  width: 50%;
+  font-size: 40px;
+  background: 
+  linear-gradient(45deg,  transparent 0%, transparent 57%, #423246 100%),
+  linear-gradient(-45deg, #8f5046 0%,  #A14436 0.3%, #4C2556 112%,  transparent 11% ),
+  linear-gradient(-90deg, #A14436 100%, #A14436 65%, transparent 20% );
+  color: white;
+  border: 1px solid #ff8000;
+  border-radius: 10px;
   padding: 20px;
-  float: left;
+}
+*/
+
+.topright {
+  top: 12px;
+  right: 3px;
+  width: 130px;
+  height: 60px;
+  border: 1px;
+  background: #767474;
+}
+.form-section {
+  width: 100%;
+  height: 80px;
+  margin-top: 80px;
 }
 
-.container .right-menu {
-  width: 50%;
-  padding: 20px;
-  float: left;
-}
+/*  Button with shaking property  */
 
-/* Button used to open the chat form - fixed at the bottom of the page */
-  .open-button {
-  display: block;
+.btn-shaking {
+  background: black;
+  border: 1px dashed grey;
+  font-size: 20px;
+  padding: 10px 20px;
   position: relative;
-  -webkit-appearance: button;
-  -moz-appearance: button;  
-  border-radius: 50px;
-  background-color: #ee0606;
-  border: none;
-  color: #FFFFFF;
-  font-size: 18px;
-  padding: 15px;
-  float: left;
-  width: 50%;
-  transition: all 0.5s;
+  animation-name: shake;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
   cursor: pointer;
-  margin: 5px;
+  
+}
+.btn-shaking:hover {
+  background: #EEEEEE;
+  animation-name: shakeAnim;
 }
 
-.open-button:hover {
-  background-color: #58D68D;
+@keyframes shakeAnim {
+  0% {left: 0}
+  1% {left: -3px}
+  2% {left: 5px}
+  3% {left: -8px}
+  4% {left: 8px}
+  5% {left: -5px}
+  6% {left: 3px}
+  7% {left: 0}
+}
+
+@keyframes shake {
+  0% {left: 0}
+  1% {left: -3px}
+  2% {left: 5px}
+  3% {left: -8px}
+  4% {left: 8px}
+  5% {left: -5px}
+  6% {left: 3px}
+  7% {left: 0}
 }
 
 
-.open-button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+.bot-section {
+  margin-top: 50px;
+  width: 100%;
+
 }
-.open-button span: after {
-  content: '\00bb'; 
-  position: absolute;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-.button:hover span {
-  background-color: #2ECC71;
-  padding-right: 30px;
-}
-.button:hover span:after {
-  opacity: 2;
-  right: 0;
+
+.offbeat_yellow_logo {
+  width: 650px;
+  height: 200px;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
 }
 
 .fl-rt {
   float: right;
 }
 
+.fl-lf {
+  float: left;
+}
+
+
+
+
+/* GENERAL BUTTON STYLING */
+
+
+
+
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button {
+  background: black;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  display: block;
+  width: 300px;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 5px auto;
+  padding: 10px 6px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+button::before,
+button::after {
+  background: white;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover {
+  background: white;
+  color: black;
+}
+
+/* BUTTON 1 */
+.btn-1::after {
+  height: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.btn-1:hover:after {
+  height: 100%;
+}
+
+/* BUTTON 2 */
+.btn-2::after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0;
+}
+
+.btn-2:hover:after {
+  width: 100%;
+}
+
+/* BUTTON 3 */
+.btn-3::after {
+  height: 0;
+  left: 50%;
+  top: 50%;
+  width: 0;
+}
+
+.btn-3:hover:after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+/* BUTTON 4 */
+.btn-4::before {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.btn-4::after {
+  background: #2ecc71;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.btn-4:hover:after {
+  height: 0;
+  left: 50%;
+  top: 50%;
+  width: 0;
+}
+
+/* BUTTON 5 */
+.btn-5 {
+  overflow: hidden;
+}
+
+.btn-5::after {
+  /*background-color: #f00;*/
+  height: 100%;
+  left: -35%;
+  top: 0;
+  transform: skew(50deg);
+  transition-duration: 0.6s;
+  transform-origin: top left;
+  width: 0;
+}
+
+.btn-5:hover:after {
+  height: 100%;
+  width: 135%;
+}
+
+
+
+
+
+
+
+
+
+
+.blur   {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
 /* The popup chat - hidden by default */
-.chat-popup {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 600px;
-  z-index: 1;
-  box-shadow: 0 0 10px 5px #2f2f2f;
+
+#myForm    {
+    position: fixed;
+    display: none;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(230, 230, 230,.3);
+    overflow-y: scroll;
 }
-/* Set a style for the submit/send button */
+
+
+
 .form-container {
-  width: 100%;
-  max-width: 100%;
-  height: 600px;
-  padding: 10px 0 10px 0;
-  background: #d52e2e;
- 
-/*  border-radius: 15px 15px 0 0; */
+  align: center;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 95%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+/*  linear-gradient(45deg,  transparent 0%, transparent 57%, #221D1D 100%),
+  linear-gradient(-45deg, #221D1D 0%,  #221D1D 0.3%, #D2CF25 112%,  transparent 11% ),
+  linear-gradient(-90deg, #221D1D 100%, #221D1D 65%, transparent 20% );
+
+*/
 
 }
 
-.form-container h1 {
-  height: 40px;
+.form-top {
+  width: 100%;
+  height: 70px;
+  background: rgba(44,45,47,.9);
+  border-radius: 20px 20px 0 0; 
+  padding-bottom: 0px;
+  margin-bottom: 0;
+}
+
+.form-heading {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  position: relative;
+  top: 20px;
   color: #FFF;
-  margin: 5px;
+}
+
+.btn {
+  position: relative;
+  right: 10px;
+  bottom: 20px;
+  color: white;
+  width: 25px;
+  height: 27px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(255,255,255);
+  margin: auto;
+  padding: 20px;
+  background: rgba(0,0,0,1);
+}
+
+.btn:hover {
+  color: white;
+  background: black;
+  padding: 3px;
 }
 .form-container .response {
   width: 100%;
-  height: 450px;
+  height: 70%;
   padding: 5px;
   margin-bottom: 5px;
+  margin-top: 0;
+  border: 0;
   overflow-x: hidden;
   overflow-y: scroll;
-  background: white;
+  background: rgba(255,255,255,.9);
   /*background-image: url('images/chatBackground.jpg');
   display: flex;
   flex-flow: row wrap;
@@ -205,7 +375,7 @@ section {
   float: left;
   align-items: flex-start;
   margin-bottom: 10px;
-  padding: 20px;
+  padding: 15px;
   color: #FFF;
   background: #383838; /* #B561F5;  */
   border-radius: 15px 15px 20px 0;
@@ -216,35 +386,61 @@ section {
   float: right;
   align-items: flex-start;
   margin-bottom: 10px;
-  padding: 20px;
+  padding: 15px;
   color: #FFF;
   background: #878787;  /* #DDC3EE;  */
   border-radius: 15px 15px 0 20px;
  
 }
 
+.quickButton {
+  display: block;
+  width: auto;
+  height: 40px;
+  float: left;
+  padding:10px;
+  background: blue;
+  color: white;
+  border-radius: 20px;
+  font-size: 12px;
+  border: 1px solid blue;
+}
+
+.quickButton:hover {
+  background-color: rgba(0, 182, 232, .5);
+  color: black;
+}
+
+
 /*Inpur area*/
 .form-container .input {
-  width: 85%;
+  width: 100%;
   height: 40px;
-  border-radius: 5px;
-  margin: 1px;
+  border-radius: 0 0 20px 20px;
   padding: 5px;
+  text-decoration: none;
 }
+.form-container .input:focus {
+  outline: none;
+}
+/*
 #rec {
-  width: 10%;
-  height: 40px;
-  border-radius: 15px;
-  background-color: #e2fb16;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #13E7EC;
 
 }
+
 .form-container button .fa {
   margin: 1px;
-  font-family: Arial, Helvetica, sans-serif;;
-  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
   padding: 5px;
   text-align: center;
   color: black;
+  cursor: pointer;
 }
 
 .form-container button .fa:hover {
@@ -257,25 +453,168 @@ section {
 
 
 .form-container  .btn {
-  width: 100%;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   text-align: center;
-  background-color: black;
-  color: white;
-  padding: 3px;
+  position: relative;
+  right: 2px;
+  margin: auto;
   cursor: pointer;
-  border: 1px solid #ff0040;
   opacity: 0.8;
 }
-
+*/
 /* Add a red background color to the cancel button */
 /* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  background-color: #fdfed7;
-  color: black;
+.form-container .btn:hover {
+  
   opacity: 1;
   
 }
 
 /*CSS for chatbot */
 {box-sizing: border-box;}
+
+
+
+
+ .btn-rec {
+  border-radius: 100%;
+  width: 90px;
+  height: 90px;
+  font-size: 15px; 
+  background: red;
+  color: white;
+  /*
+  position: relative;
+  left: 240px;
+  top: 10px;
+  border: none;
+  padding: 0;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  font-size: 15px;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  background: red;
+  display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    */
+}
+
+.pulse-ring {
+  content: '';
+  width: 85px;
+  height: 85px;
+  border: 5px solid #E60505;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: -2px;
+
+  animation: pulsate infinite 2s;
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-transform: scale(1, 1);
+    opacity: .8;
+  }
+  100% {
+    -webkit-transform: scale(1.4, 1.3);
+    opacity: 0;
+  }
+}
+
+
+
+
+/*    Animated Voice Button */
+
+
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed');
+
+.wrapper
+{ 
+  padding: 20px;     
+} 
+
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes shadow-pulse-big
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 70px rgba(0, 0, 0, 0);
+  }
+}
+
+.example-1
+{
+  float: left;
+  margin: 40px;
+  width: 130px;
+  height: 130px;
+  font: 13px/130px 'Barlow Semi Condensed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  text-align: center;
+  background: rgba(30, 144, 255, 0.6);
+  border-radius: 50%;
+  animation: shadow-pulse 1s infinite;
+}
+.example-2
+{
+  float: left;
+  margin: 75px 40px 0 40px;
+  width: 130px;
+  height: 60px;
+  font: 13px/60px 'Barlow Semi Condensed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  text-align: center;
+  background: rgba(3, 3, 3, 0.6);
+  border-radius: 3px;
+  animation: shadow-pulse 1s 3;
+}
+.example-3
+{
+  float: left;
+  margin: 40px 0 0 40px;
+  width: 130px;
+  height: 130px;
+  font: 13px/130px 'Barlow Semi Condensed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  text-align: center;
+  background: rgba(30, 144, 255, 0.6);
+  border-radius: 50%;
+  animation: shadow-pulse-big 1s 1;
+}
