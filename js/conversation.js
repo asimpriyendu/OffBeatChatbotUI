@@ -71,7 +71,7 @@ var accessToken = "f190710cc93c4d3f820e6ca486e2c1f4";
       });
       $("#btn11").click(function(event) 
       {
-        setResponse("Developed for the NSHM Knowledge Campus Kolkata, this Intelligent Voice and Chat Bot can interpret your questions related to PLACEMENTS, DEPARTMENTS, EMERGENCY NUMBERS, AFFILIATIONS, CORPORATE RELATIONS OF NSHM and RANKINGS. You can ask your questions verbally by pressing the VOICE button (the way you do it with Alexa or Siri) or by Simply typing your message. Sample questions: “Tell me about Fees”, “How was the Placement” and “I want to know NSHM’s Ranking”. All the bots are powered by Machine Learning Human Language Processing and have been trained to understand your questions in any phrase, as long as they are related to given topics of NSHM. However, this is not Alexa or SIri. This is NSHM’s own Artificially Intelligent Voicebot developed by G.I Labs India, started by two ex-Accenture Employees and currently one of the Top 3000 Startups in India.");      
+        setResponse('HELLO! This is button 11');
       });
 
     });
