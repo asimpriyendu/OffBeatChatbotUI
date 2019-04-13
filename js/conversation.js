@@ -14,13 +14,13 @@ var accessToken = "f190710cc93c4d3f820e6ca486e2c1f4";
      
       $("#btn01").click(function(event) 
       {
-        setResponse("Topcat is here for you. What do you wanna know?");
+        setResponse('Hi! I am TopCat AI BoT. To get information about TopCat you may press any of the Quick Buttons or you may simply ask/type your question. Want some sample questions? Here they are: || "What is TopCat?" || "Where is TopCat?" || "What services does TopCat offer? || "Show contact details of TopCat?" || "Want to know about discounts at TopCat"');
         setButton("What is Topcat");
         setButton("Topcat price");
       });
       $("#btn02").click(function(event) 
       {
-        setResponse("Have any query about bunkers? Go ahead, type in your question!"); 
+        setResponse('Hi Hooman! I am the Bunker AI Assistant. To get information about the Bunkers, you may press the Quick Buttons or you may simply ask/type your question. Want some sample questions? Here they go: || "Tell me about Bunkers" ||"What is the price of bunkers?" || "What are the services at OffBeat Bunkers?" || "How can I book a bunker?" || "Give me the contact details for OffBeat Bunkers"'); 
         setButton("Details");
       });
       $("#btn03").click(function(event) 
@@ -40,17 +40,20 @@ var accessToken = "f190710cc93c4d3f820e6ca486e2c1f4";
       });
       $("#btn06").click(function(event) 
       {
-        setResponse("Want to book an appointment? Tell me how can I help?"); 
-        setButton("What can you do?");
+        setResponse('Looking for an appointment Hooman? Please say/type "appointment" and I will complete the proceedings for you.'); 
       });
       $("#btn07").click(function(event) 
       {
-        setResponse("Hey, I see you're looking for certifications. Tell me how can I help? "); 
-        setButton("Rankings");
+        setResponse('Hi Hooman! To get information about Certifications you may press any of the Quick Buttons or you may simply ask/type your question. Want some sample questions? Here they go: || "What Certifications do you offer?" || "Career prospects of the certifications?" || "What is the price of a certificate course? || "Who do I contact for more details on certifications?" || "How can I book a seat for a certification?"|| "What is the average salary of Salesforce certified professional?"'); 
+        setButton("Certifications Offered");
+        setButton("Career Prospects");
+        setButton('Price of a course');
+        setButton('Book a seat');
+        setButton('Average Salary');
       });
       $("#btn08").click(function(event) 
       {
-        setResponse("Is there an Emergency? How may I help?"); 
+        setResponse('Do not panic Hooman! Just say "Emergency" or press a quick button. I am here to help you!'); 
         setButton("Call Police");
         setButton("Call Ambulance");
       });
