@@ -261,7 +261,7 @@
       document.getElementById("myForm").style.display = "none";
       document.getElementById('response').innerHTML = ' ';
       document.getElementById('container').setAttribute('class', null);
-      document.getElementById("input").reset();
+      document.getElementById('input').value='';
       if(responsiveVoice.isPlaying()) 
       {
         responsiveVoice.cancel();
