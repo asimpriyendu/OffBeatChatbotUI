@@ -17,26 +17,37 @@ var accessToken = "f190710cc93c4d3f820e6ca486e2c1f4";
         setResponse('Hi! I am TopCat AI BoT. To get information about TopCat you may press any of the Quick Buttons or you may simply ask/type your question. Want some sample questions? Here they are: || "What is TopCat?" || "Where is TopCat?" || "What services does TopCat offer? || "Show contact details of TopCat?" || "Want to know about discounts at TopCat"');
         setButton("What is Topcat");
         setButton("Topcat price");
+        setButton("Contact Details");
+        setButton("Discounts");
       });
       $("#btn02").click(function(event) 
       {
         setResponse('Hi Hooman! I am the Bunker AI Assistant. To get information about the Bunkers, you may press the Quick Buttons or you may simply ask/type your question. Want some sample questions? Here they go: || "Tell me about Bunkers" ||"What is the price of bunkers?" || "What are the services at OffBeat Bunkers?" || "How can I book a bunker?" || "Give me the contact details for OffBeat Bunkers"'); 
-        setButton("Details");
+        setButton("Offbeat Bunker Details");
+        setButton("Bunker Booking");
+        setButton("Bunker Contact Number");
+        setButton("Bunker facilities");
       });
       $("#btn03").click(function(event) 
       {
         setResponse("I'm here to give you answers related to 8-Bit. Go ahead Ask me."); 
         setButton("8 bit Details");
+        setButton("Book 8 Bit");
+        setButton("8 Bit Contact Number");
       });
       $("#btn04").click(function(event) 
       {
         setResponse("Hello! Are you seeking information related to Fitness & Lifestyle? Go ahead, type in your message! I'm here to help you."); 
         setButton("Fitness Studio");
+        setButton("Fitness & Lifestyle Price");
+        setButton("Fitness & Lifestyle contact");
       });
       $("#btn05").click(function(event) 
       {
         setResponse("Seeking information about Y-East? Please tell me How may I help you?"); 
         setButton("What is YEast");
+        setButton("Where is YEast");
+        setButton("YEast Price");
       });
       $("#btn06").click(function(event) 
       {
@@ -56,6 +67,7 @@ var accessToken = "f190710cc93c4d3f820e6ca486e2c1f4";
         setResponse('Do not panic Hooman! Just say "Emergency" or press a quick button. I am here to help you!'); 
         setButton("Call Police");
         setButton("Call Ambulance");
+        setButton("Call Fire Brigade");
       });
       $("#btn09").click(function(event) 
       {
@@ -67,7 +79,7 @@ var accessToken = "f190710cc93c4d3f820e6ca486e2c1f4";
       {
         setResponse("Momo-I-AM is here for you. Tell me what do you want to know?");     
         setButton("Menu");
-        setButton("Details") 
+        setButton("Details");
       });
       $("#btn11").click(function(event) 
       {
