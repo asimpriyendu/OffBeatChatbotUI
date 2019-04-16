@@ -1,5 +1,5 @@
 var accessToken = "50146251ea8540d6a1881718e673099a";
-    var baseUrl = "https://api.dialogflow.com/v1/";
+    var baseUrl = "https://api.dialogflow.com/v2/";
     $(document).ready(function() {
       $("#input").keypress(function(event) {
         if (event.which == 13) {
