@@ -194,7 +194,7 @@ var accessToken = "50146251ea8540d6a1881718e673099a";
     function setButtonVal(i) {
       $("#input").val(i);
       send();
-      $("#input").innerHTML = "";
+     // $("#input").innerHTML = "";
     }
    // var conversation = [];
     
